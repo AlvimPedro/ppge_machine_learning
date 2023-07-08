@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="color_intensity <= 3.825\ngini = 0.658\nsamples = 142\nvalue = [42, 58, 42]\nclass = class_1", fillcolor="#dffbeb"] ;
+1 [label="od280/od315_of_diluted_wines <= 3.73\ngini = 0.077\nsamples = 50\nvalue = [2, 48, 0]\nclass = class_1", fillcolor="#41e686"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.0\nsamples = 48\nvalue = [0, 48, 0]\nclass = class_1", fillcolor="#39e581"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0, 0]\nclass = class_0", fillcolor="#e58139"] ;
+1 -> 3 ;
+4 [label="flavanoids <= 1.58\ngini = 0.591\nsamples = 92\nvalue = [40, 10, 42]\nclass = class_2", fillcolor="#faf7fe"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="ash <= 2.06\ngini = 0.045\nsamples = 43\nvalue = [0, 1, 42]\nclass = class_2", fillcolor="#843ee6"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = class_1", fillcolor="#39e581"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 42\nvalue = [0, 0, 42]\nclass = class_2", fillcolor="#8139e5"] ;
+5 -> 7 ;
+8 [label="proline <= 724.5\ngini = 0.3\nsamples = 49\nvalue = [40, 9, 0]\nclass = class_0", fillcolor="#eb9d66"] ;
+4 -> 8 ;
+9 [label="gini = 0.0\nsamples = 9\nvalue = [0, 9, 0]\nclass = class_1", fillcolor="#39e581"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 40\nvalue = [40, 0, 0]\nclass = class_0", fillcolor="#e58139"] ;
+8 -> 10 ;
+}
